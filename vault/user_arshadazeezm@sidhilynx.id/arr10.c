@@ -8,6 +8,24 @@ int stringLength(char *str) {
     return length;
 }
 
+
+int strigLength(char *str) {
+    int length = 0;
+    while (str[length] != '\0') {
+        length++;
+    }
+    return length;
+}
+
+int stringacsLength(char *str) {
+    int length = 0;
+    while (str[length] != '\0') {
+        length++;
+    }
+    return length;
+}
+
+
 int main() {
     char myString[] = "Programming is fun";
     int len = stringLength(myString);
