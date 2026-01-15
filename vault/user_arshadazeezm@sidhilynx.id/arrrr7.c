@@ -11,23 +11,7 @@ int binarySearch(int arr[], int size, int target) {
             return mid;
         }
 
-        if (arr[mid] < target) {
-            low = mid + 1;
-        } else {
-            high = mid - 1;
-        }
-    }
-
-    return -1;
-}
-
-int main() {
-    int numbers[] = {10, 20, 30, 40, 50, 70, 80, 90};
-    int n = sizeof(numbers) / sizeof(numbers[0]);
-    int key1 = 70;
-    int key2 = 60;
-    int index1 = binarySearch(numbers, n, key1);
-    int index2 = binarySearch(numbers, n, key2);
+        if (arr[mid] < target) 
 
     if (index1 != -1) {
         printf("Element %d found at index %d.\n", key1, index1);
