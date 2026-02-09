@@ -19,7 +19,7 @@ public:
         cout << "price: " << price << endl;
     }
 
-    friend void discount_price(item it);
+    friend void discount_price(item it); 
 };
 
 void discount_price(item it) {
