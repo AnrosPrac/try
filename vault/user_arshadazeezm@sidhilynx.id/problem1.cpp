@@ -1,12 +1,17 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
 class Student {
 public:
     Student() {
-        name = "Unknown";
+        strcpy(name, "Unknown");
         rollno = 0;
     }
     Student(int r, char n[]) {
         rollno = r;
-        name = n;
+        strcpy(name, n);
     }
     ~Student() {
         cout << "Destructor called" << endl;
@@ -18,7 +23,7 @@ public:
 private:
     int rollno;
     char name[20];
-}
+};
 
 int main() {
     Student s1;
