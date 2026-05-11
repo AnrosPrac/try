@@ -12,7 +12,7 @@ class Score{
     int numbwer_of_attempts;
     int total_score=0;
     public:
-    string name;
+    string name; 
     int inital_score;
     
     Score(string name){
